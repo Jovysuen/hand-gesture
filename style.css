@@ -1,0 +1,27 @@
+body
+{
+  color: white;
+  background: #c291db;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #Capture
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#hand1, #hand2
+{
+  color: black;
+}
+.b
+{
+  font-size: 40px;
+}
+.a
+{
+  font-size:48px;
+}

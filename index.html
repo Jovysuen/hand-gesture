@@ -1,0 +1,106 @@
+ 
+<html>
+  <head>
+    <title>Hand gensture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-warning heading">
+        GESTURE WEB APP
+        <br>
+        <span>
+          👌
+        </span>
+        <span>
+          ✌
+        </span>
+        <span>
+          👍
+        </span>
+        <span>
+          👎
+        </span>
+        <span>	👋
+        </span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie of a gesture to know about it's meaning
+      	<br>
+        <b style="color: rgb(255, 255, 255)">On the following gestures the model is trained-</b>
+        <br>
+        <br>
+        <span>
+          👌
+        </span>
+        <span>
+          ✌
+        </span>
+        <span>
+          👍
+        </span>
+        <span>
+          👎
+        </span>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam view - </label>
+
+        <br><br>
+        <div id="camera">
+
+        </div>
+        <br>
+        <button onclick="capture()" class="btn btn-primary">
+          Capture image
+        </button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style="color: black;">
+          Prediction 
+        </label>
+        <p class="a" id="emoji1">
+          
+        </p>
+        <p class="b" id="hand1">
+
+        </p>
+        <br>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>
+        Snap shot
+        </label>
+        <br> <br>
+        <div id="Capture">
+
+        </div>
+        <br>
+        <button class="btn btn-primary" onclick="prediction()">
+          Prediction
+        </button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
